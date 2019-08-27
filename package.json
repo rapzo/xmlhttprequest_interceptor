@@ -1,0 +1,21 @@
+{
+  "name": "xmlhttprequest_interceptor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "start": "micro-dev index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rui Lima <ruipedro.lima@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "got": "^9.6.0",
+    "micro": "^9.3.4"
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  }
+}
