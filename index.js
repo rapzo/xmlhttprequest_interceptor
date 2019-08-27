@@ -16,8 +16,7 @@ module.exports = async (req, res) => {
   if ('/coins' === pathname) {
     res.setHeader('Content-Type', 'application/json')
     
-    if ('production' === NODE_ENV) return send(res, 200, stream("https://api.livecoin.net/info/coinInfo"))
-    return send(res, 200, createReadStream('./coins.json'))
+    return send(res, 200, stream("https://api.livecoin.net/info/coinInfo"))
   }
 
   res.setHeader('Content-Type', 'text/html')
